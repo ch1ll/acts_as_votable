@@ -7,7 +7,7 @@ module ActsAsVotable
         params_object.permit(:votable_id, :votable_type,
           :voter_id, :voter_type,
           :votable, :voter,
-          :vote_flag, :vote_scope)
+          :vote_flag, :vote_scope, :vote_time)
       end
       
       def votable_params(params_object = params[:vote])
